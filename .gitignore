@@ -1,0 +1,43 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+
+# Publish output
+publish/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# ASP.NET
+appsettings.Development.json
+
+# Jenkins temp files
+workspace/
+
+# Test results
+TestResults/

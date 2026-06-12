@@ -1,0 +1,21 @@
+﻿@model LoginApp.Models.LoginModel
+
+<h2>User Login</h2>
+
+<form method="post">
+
+    <label>Username</label>
+    <input asp-for="Username" />
+
+    <br /><br />
+
+    <label>Password</label>
+    <input asp-for="Password" type="password" />
+
+    <br /><br />
+
+    <button type="submit">Login</button>
+
+</form>
+
+<h3>@ViewBag.Message</h3>
