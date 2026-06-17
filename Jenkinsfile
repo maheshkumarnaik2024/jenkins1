@@ -1,6 +1,5 @@
 pipeline {
-
- agent any
+    image 'mcr.microsoft.com/dotnet/sdk:8.0'
 
  stages {
 
