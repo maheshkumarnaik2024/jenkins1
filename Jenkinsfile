@@ -16,22 +16,27 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'dotnet build'
+                sh 'dotnet build -c Release'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'dotnet test'
             }
         }
 
         stage('Publish') {
             steps {
-                sh 'dotnet publish -c Release'
+                sh 'dotnet publish -c Release -o publish'
             }
         }
 
-        stage('Check Version') {
+        stage('Archive') {
             steps {
-                sh 'dotnet --version'
+                archiveArtifacts artifacts: 'publish/**'
             }
         }
 
     }
-
 }
